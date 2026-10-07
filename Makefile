@@ -3,7 +3,7 @@ TARGETS += $(patsubst %.cpp, %, $(wildcard *.cpp))
 
 PERF := ../perf
 CFLAGS := -O2 -g -fno-asynchronous-unwind-tables -fno-unwind-tables
-CXXFLAGS := -O2 -g -fno-asynchronous-unwind-tables -fno-unwind-tables
+CXXFLAGS := -O2 -g -fno-asynchronous-unwind-tables -fno-unwind-tables -Wno-volatile -Wno-unknown-warning-option
 
 all: $(TARGETS)
 
